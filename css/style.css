@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    
+}
+body{
+    background-color: gray;
+}
+.container{
+    max-width: 1280px;
+    margin:0 auto;
+    padding:0 2%;
+}
+.clear{
+    clear:both;
+}
+
+header{
+    padding:12px 0;
+    background-color: black;
+}
+.header-left{
+    float:left;
+}
+.header-left img{
+    max-width: 120px;
+}
+
+.menu-header{
+    position:relative;
+    top:-10px;
+    display: inline-block;
+    margin-left: 30px;
+}
+.menu-header li{
+    display:inline-block;
+    margin-right: 15px;
+}
+.menu-header a{
+    color:white;
+    text-decoration: none;
+}
+
+.header-right{
+    float:right;
+    margin-top: 10px;
+}
+.search{/*DIVS TEM DISPLAY BLOCK POR PADRÃO(FAZEM OS OUTROS ELEMENTOS CAIREM PARA LINHA ABAIXO)*/
+    display:inline-block;
+}
+.header-right i{
+    margin:0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    cursor:pointer;
+}
+.header-right a{
+    color:white;
+    text-decoration: none;
+}
+.notifications{
+    display: inline-block;
+    position:relative;
+}
+.circle-notifications{
+    position:absolute;
+    right:0;
+    top:-10px;
+    width:18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #e50914;
+    text-align: center;
+    vertical-align: 18px;
+}
+.circle-notifications span{
+    font-size: 12px;
+    color:white;
+    
+}
