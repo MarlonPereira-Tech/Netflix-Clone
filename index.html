@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Netflix</title>
@@ -28,10 +29,10 @@
                     <i class="icon-search"></i>
                 </div><!--search-->
                 <a href="">INFANTIL</a>
-                <i class="icon-gift"></i>
+                <i class="fa fa-gift"></i>
                 <div class="notifications">
                     <div class="circle-notifications">
-                        <span>10</span>
+                        <span>1</span>
                     </div><!---circle-notifications---->
                     <i class="icon-bell-alt"></i>
                 </div><!---notifications----->
@@ -39,6 +40,98 @@
             <div class="clear"></div>
         </div><!-----container------>
     </header>
+    <section class="destaque"> 
+        
+        <video autoplay muted loop id="video-destaque">
+            <source src="images/arrow.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+
+
+        <div class="overlay"></div>
+        <div class="texto-destaque">
+            <h2>Série Arrow</h2>
+            <h3>Assista a estréia agora!</h3>
+            <p>Descrição sa série ou filme</p>
+            <br/>
+            <a href=""><i class="icon-play"></i>Assistir</a>
+            <a href=""><i class="fa fa-plus"></i>Minha lista</a>
+            <a href=""><i class="fa fa-info"></i>Informações</a>
+
+        </div><!--texto-destaque-->
+        
+    </section><!----section destaque----->
+
+    <section class="vitrine">
+        <div class="vitrine-flex">
+            <div class="vitrine-single-banner">
+                <div class="vitrine-wrapper" style="background-image: url(images/suits.jpeg);"></div>
+            </div>
+            <div class="vitrine-single-banner">
+                <div class="vitrine-wrapper"style="background-image: url(images/arrow.jpg);"></div>
+            </div>
+            <div class="vitrine-single-banner">
+                <div class="vitrine-wrapper" style="background-image: url(images/suits.jpeg);"></div>
+            </div>
+            <div class="vitrine-single-banner">
+                <div class="vitrine-wrapper"style="background-image: url(images/arrow.jpg);"></div>
+            </div>
+            <div class="vitrine-single-banner">
+                <div class="vitrine-wrapper" style="background-image: url(images/suits.jpeg);"></div>
+            </div>
+            <div class="vitrine-single-banner">
+                <div class="vitrine-wrapper"style="background-image: url(images/arrow.jpg);"></div>
+            </div>
+            <div class="vitrine-single-banner">
+                <div class="vitrine-wrapper" style="background-image: url(images/suits.jpeg);"></div>
+            </div>
+            <div class="vitrine-single-banner">
+                <div class="vitrine-wrapper"style="background-image: url(images/arrow.jpg);"></div>
+            </div>
+            
+
+        </div><!---vitrine flex---->
+
+    </section><!-----section vitrine----->
+
+    <script src="jquery.js"></script>
+	<script src="slick.min.js"></script>
+
+	<script>
+		$('.vitrine-flex').slick({
+	dots: false,
+	arrows:false,
+  infinite: false,
+  centerMode: false,
+  speed:1000,
+  slidesToShow: 6,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      pauseOnHover:false,
+        responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3
+      }
+  }]
+	});
+
+		$('.vitrine-wraper').hover(function(){
+			$(this).css('z-index','1000');
+		})
+
+		$('.vitrine-wraper').mouseout(function(){
+			$(this).css('z-index','0');
+		})
+
+        $('.menu-header a').hover(function(){
+            $(this).css('color','#b10f17')
+        })
+        $('.menu-header a').mouseout(function(){
+            $(this).css('color','white')
+        })
+	</script>
     
 </body>
 </html>
