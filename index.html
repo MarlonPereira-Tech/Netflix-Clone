@@ -25,6 +25,9 @@
                 </div><!----menu-header---->
             </div><!---header left---->
             <div class="header-right">
+                <div class="bar-search">
+                    <input type="text" name="search">
+                </div>
                 <div class="search">
                     <i class="icon-search"></i>
                 </div><!--search-->
@@ -130,6 +133,11 @@
         })
         $('.menu-header a').mouseout(function(){
             $(this).css('color','white')
+        })
+
+        $('.icon-search').click(function(){
+            $('.bar-search input').slideToggle();
+            
         })
 	</script>
     

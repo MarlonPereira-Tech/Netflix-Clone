@@ -54,6 +54,14 @@ header{
 .search{/*DIVS TEM DISPLAY BLOCK POR PADRÃO(FAZEM OS OUTROS ELEMENTOS CAIREM PARA LINHA ABAIXO)*/
     display:inline-block;
 }
+.bar-search{
+    display:inline-block;
+}
+.bar-search input{
+    display: none;
+    outline: 0;
+    padding-left: 4px;
+}
 .header-right i{
     margin:0 10px;
     font-size: 18px;
